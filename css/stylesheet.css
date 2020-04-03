@@ -1,4 +1,269 @@
+/*Pure CSS Carousel*/
+
+.content-slider {
+  width: 100%;
+  height: 360px;
+}
+
+.slider {
+      height: 400px;
+    width: 80.66666667%;
+    margin: 40px auto 0;
+    overflow: visible;
+    position: relative;
+    margin-top: -2px;
+}
+
+.mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -250px;
+  list-style: none;
+}
+
+.slider .quote {
+ 
+}
+
+.slider .source {
+  font-size: 20px;
+  text-align: right;
+}
+
+.slider li.anim1 {
+  animation: cycle 15s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 15s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 15s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 15s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 15s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+
+
+
+
+
+
 /* Container needed to position the overlay. Adjust the width as needed */
+
+
+
 .containers {
   position: relative;
   width: 100%;
@@ -57,7 +322,7 @@
   height: 15px;
  /* width: 500px;*/
 }
-
+/*Voorzitter*/
 .progress-value {
   animation: loadd 3s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
@@ -70,5 +335,131 @@
 
 @keyframes loadd {
   0% { width: 0; }
-  100% { width: 68%; }
+  100% { width: 21%; }
 }
+/*Eind voorzitter*/
+
+/*BEDRIJFSMAN*/
+.progress-valueBEDRIJFSMAN {
+  animation: loadBEDRIJFSMAN 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadBEDRIJFSMAN {
+  0% { width: 0; }
+  100% { width: 16%; }
+}
+/*Eind BEDRIJFSMAN*/
+
+/*Plant*/
+.progress-valueplant {
+  animation: loadplant 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadplant {
+  0% { width: 0; }
+  100% { width: 15%; }
+}
+/*Einde plant*/
+
+/*Vormer*/
+
+.progress-valueVormer {
+  animation: loadVormer 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadVormer {
+  0% { width: 0; }
+  100% { width: 14%; }
+}
+/*Einde Vormer*/
+
+/*Onderzoeker*/
+
+.progress-valueonderzoekr {
+  animation: loadonderzoekr 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadonderzoekr {
+  0% { width: 0; }
+  100% { width: 10%; }
+}
+/*Einde onderzoekr*/
+
+/*Zorgdrager*/
+
+.progress-valuezorgdrager {
+  animation: loadzorgdrager 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadzorgdrager {
+  0% { width: 0; }
+  100% { width: 8%; }
+}
+/*Einde zorgdrager*/
+
+/*Groepsmedewerker*/
+
+.progress-valuegroepsmedewerker {
+  animation: loadgroepsmedewerker 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadgroepsmedewerker {
+  0% { width: 0; }
+  100% { width: 8%; }
+}
+/*Einde groepsmedewerker*/
+
+/*Waarschuwer*/
+
+.progress-values {
+  animation: loads 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loads {
+  0% { width: 0; }
+  100% { width: 6%; }
+}
+
+/*Einde waarschuwer*/
