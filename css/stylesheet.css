@@ -46,3 +46,29 @@
   text-align: center;
 }
 
+.progress {
+  background: #414A52;
+/*  justify-content: flex-start;*/
+/*  border-radius: 100px;*/
+/*  align-items: center;*/
+ /* position: relative;*/
+ /* padding: 0 5px;*/
+/*  display: flex;*/
+  height: 15px;
+ /* width: 500px;*/
+}
+
+.progress-value {
+  animation: loadd 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  /*border-radius: 100px;*/
+  background: #7AE2DE;
+  height: 30px;
+  width: 0;
+}
+
+
+@keyframes loadd {
+  0% { width: 0; }
+  100% { width: 68%; }
+}
